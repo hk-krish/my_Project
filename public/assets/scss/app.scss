@@ -1,0 +1,64 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "react-toastify/dist/ReactToastify.css";
+
+@import "vendors/feather-icon.scss";
+@import "vendors/flag-icon.scss";
+@import "vendors/icons";
+@import "vendors/themify/themify-icons";
+@import "vendors/whether-icon";
+@import "vendors/font-awesome.scss";
+@import "responsive.scss";
+@import "react-plugin.scss";
+
+//react-photoswipe-gallery
+@import 'photoswipe/dist/photoswipe.css';
+
+// react date-piker
+@import "react-datepicker/dist/react-datepicker.css";
+
+//react-bootstrap-typeahead
+@import 'react-bootstrap-typeahead/css/Typeahead.css';
+
+//leaflet map
+@import 'leaflet/dist/leaflet.css';
+
+//react-simplemde-editor easy_mde
+@import "easymde/dist/easymde.min.css";
+
+//simple-bar
+@import 'simplebar-react/dist/simplebar.min.css';
+
+//React-Slick
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+//calendar
+@import 'react-calendar/dist/Calendar.css';
+
+// image cropper css
+@import "react-image-crop/src/ReactCrop.scss";
+
+//swiper
+@import "swiper/css";
+@import "swiper/css/pagination";
+@import "swiper/css/navigation";
+@import "swiper/css/grid";
+@import 'swiper/css/effect-fade';
+
+//Filepond
+@import "filepond/dist/filepond.min.css";
+@import "filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css";
+
+//react-dropzone
+@import './pages/dropzone';
+
+//treeview
+@import "@progress/kendo-theme-default/dist/all.css";
+
+//tour
+@import "@sjmc11/tourguidejs/src/scss/tour.scss";
+
+//react-perfect-scrollbar
+@import "react-perfect-scrollbar/dist/css/styles.css";
+
+@import "style.scss";
