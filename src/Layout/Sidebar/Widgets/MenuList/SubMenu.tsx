@@ -2,7 +2,7 @@
 import { Fragment, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { Link, useLocation } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 import { Href } from "../../../../Constants";
 import ConfigDB from "../../../../Config/Theme";
 import { MenuItem, MenuListProps } from "../../../../Types/Layout";
@@ -14,7 +14,7 @@ import SvgIcon from "../../../../Components/CoreComponents/SvgIcon";
 const SidebarSubMenu: React.FC<MenuListProps> = ({ menu, setActiveMenu, activeMenu, level }) => {
   const dispatch = useDispatch();
   const location = useLocation();
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   const { pinedMenu } = useAppSelector((state) => state.layout);
   const sideBarIcon = ConfigDB.settings.sidebar.iconType;
   const handlePined = (value: string) => {
@@ -65,7 +65,7 @@ const SidebarSubMenu: React.FC<MenuListProps> = ({ menu, setActiveMenu, activeMe
               setActiveMenu([...temp]);
             }}>
             {item.icon && <SvgIcon className={`${sideBarIcon}-icon`} iconId={`${sideBarIcon}-${item.icon}`} />}
-            {level === 0 ? <span className="lan-3">{t(`${item.title}`)}</span> : t(`${item.title}`)}
+            {level === 0 ? <span className="lan-3">{`${item.title}`}</span> : `${item.title}`}
             {item.menu && <div className="according-menu">{activeMenu[level] === item.title ? <i className="fa fa-angle-down" /> : <i className="fa fa-angle-right" />}</div>}
           </Link>
           {item.menu && (

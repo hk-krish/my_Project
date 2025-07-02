@@ -1,5 +1,5 @@
 import { useState, Fragment } from "react";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 
 import { menuList } from "../../../../Data/Layout/SidebarMenuList";
 import { MenuItem } from "../../../../Types/Layout";
@@ -10,7 +10,7 @@ const MenuList = () => {
 
   const { pinedMenu } = useAppSelector((state) => state.layout);
   const [activeMenu, setActiveMenu] = useState<MenuItem[]>([]);
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   const shouldHideMenu = (mainMenu: MenuItem) => mainMenu?.Items?.map((data) => data.title).every((titles) => pinedMenu.includes(titles));
  
   return (
@@ -20,7 +20,7 @@ const MenuList = () => {
           <Fragment key={index}>
             <li className={`sidebar-main-title ${shouldHideMenu(mainMenu) ? "d-none" : ""}`}>
               <div>
-                <h6 className="lan-1">{t(`${mainMenu.title}`)}</h6>
+                <h6 className="lan-1">{`${mainMenu.title}`}</h6>
               </div>
             </li>
             <SubMenu menu={mainMenu.Items} activeMenu={activeMenu} setActiveMenu={setActiveMenu} level={0} />
