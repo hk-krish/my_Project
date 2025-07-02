@@ -32,9 +32,9 @@ const RouterProvider = createBrowserRouter(
     },
     { path: "*", element: <Error404 /> },
   ],
-  {
-    basename,
-  }
+  // {
+  //   basename,
+  // }
 );
 
 export default RouterProvider;
